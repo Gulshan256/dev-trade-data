@@ -53,6 +53,7 @@ func FeedbackGetData(db *sql.DB) ([]models.Feedback, error) {
 			&feedbackData.Time,
 			&feedbackData.Feedback,
 		)
+
 		if err != nil {
 			return nil, err
 		}
